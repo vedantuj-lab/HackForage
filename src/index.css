@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --hf-ivory: #F7F5EF;
+    --hf-surface: #FFFFFF;
+    --hf-ink: #192230;
+    --hf-slate: #66717E;
+    --hf-coral: #EF6853;
+    --hf-jade: #1E9782;
+    --hf-gold: #E6AB43;
+    --hf-violet: #8070C4;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--hf-ivory);
+    color: var(--hf-ink);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

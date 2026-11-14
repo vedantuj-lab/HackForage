@@ -1,0 +1,1807 @@
+# MASTER DEVELOPMENT PROMPT
+# PROJECT: HACKFORGE
+## Build Balanced Teams. Not Random Teams.
+
+You are an expert full-stack software architect, senior React developer, NestJS backend engineer, PostgreSQL database architect, UI/UX designer, cybersecurity engineer and software testing specialist.
+
+Your responsibility is to design and develop a complete, functional, production-oriented web application called HACKFORGE.
+
+Do not create a simple landing page, static prototype or frontend-only demonstration.
+
+Build a complete working application with frontend, backend, database, authentication, business logic, algorithms, APIs, dashboards, real-time functionality, testing and documentation.
+
+Every major button, form, dashboard, chart, filter and action must work.
+
+Do not use fake functionality or hardcoded results as a substitute for actual business logic.
+
+==================================================
+1. PROJECT OVERVIEW
+==================================================
+
+PROJECT NAME:
+HACKFORGE
+
+TAGLINE:
+Build Balanced Teams. Not Random Teams.
+
+PROBLEM STATEMENT:
+PS1 – Race-Proof Team Formation at Scale.
+
+PRODUCT CATEGORY:
+Intelligent Team Formation and Management Platform.
+
+PROJECT OWNER:
+Vedant Dalvi.
+
+INSTITUTION:
+Shree L.R. Tiwari College of Engineering.
+
+PARTICIPATION:
+Individual.
+
+PROJECT OBJECTIVE:
+
+HackForge is an intelligent team formation platform designed to solve problems associated with unbalanced teams, skill mismatches, unfair team formation, concurrent membership requests, ineffective waiting lists and leadership dependency.
+
+The platform connects participants, team leaders and administrators through a centralized intelligent team formation system.
+
+The platform must provide:
+
+1. Race-Proof Team Formation Engine.
+2. Intelligent Compatibility Engine.
+3. Team Health Engine.
+4. Smart Waitlist System.
+5. Leadership Succession System.
+6. Fairness Dashboard.
+
+These six modules are the central innovations of HackForge.
+
+Do not change the core concept or replace these modules with unrelated features.
+
+==================================================
+2. DESIGN AND VISUAL IDENTITY
+==================================================
+
+Create a premium, modern, visually impressive SaaS platform.
+
+The website must look like a professionally developed technology startup product.
+
+DESIGN DIRECTION:
+
+Use a distinctive editorial SaaS design rather than a generic AI-generated dashboard.
+
+COLOR PALETTE:
+
+Primary background:
+Warm ivory – #F7F5EF
+
+Primary text:
+Deep ink – #192230
+
+Secondary text:
+Muted slate – #66717E
+
+Primary accent:
+Coral – #EF6853
+
+Secondary accent:
+Jade – #1E9782
+
+Additional accents:
+Gold – #E6AB43
+Violet – #8070C4
+
+Use different accent combinations for different functional modules while maintaining consistent design quality.
+
+MODULE COLOR IDENTITIES:
+
+Participant Portal:
+Jade + Warm Ivory.
+
+Team Leader Portal:
+Coral + Deep Ink.
+
+Compatibility Engine:
+Violet + Jade.
+
+Team Health Engine:
+Gold + Coral.
+
+Race-Proof Engine:
+Deep Ink + Jade.
+
+Admin Dashboard:
+Deep Ink + Coral + Gold.
+
+WAITLIST:
+Violet + Coral.
+
+LEADERSHIP:
+Jade + Gold.
+
+DESIGN REQUIREMENTS:
+
+- Premium typography.
+- Modern responsive layouts.
+- Beautiful sidebar navigation.
+- Clean cards and data tables.
+- Interactive charts.
+- Subtle transitions.
+- Smooth hover effects.
+- Professional modals.
+- Modern form controls.
+- Attractive empty states.
+- Loading skeletons.
+- Toast notifications.
+- Confirmation dialogs.
+- Responsive navigation.
+- Consistent spacing.
+- Accessible contrast.
+- Desktop, tablet and mobile support.
+
+Avoid:
+- Excessive gradients.
+- Excessive glassmorphism.
+- Repetitive cards everywhere.
+- Excessive animations.
+- Generic dashboard templates.
+- Unnecessary 3D effects.
+- Blue as the dominant colour across the entire application.
+- Decorative components that interfere with functionality.
+
+Use Lucide icons.
+
+Use Recharts for analytics visualizations.
+
+Use meaningful visualizations rather than decorative charts.
+
+==================================================
+3. APPLICATION STRUCTURE
+==================================================
+
+Build three separate portals.
+
+A. PARTICIPANT PORTAL
+B. TEAM LEADER PORTAL
+C. ADMIN PORTAL
+
+Implement role-based authentication and authorization.
+
+A participant must not access administrator functionality.
+
+A team leader must only manage teams for which they have the appropriate permissions.
+
+Administrators must have protected administrative permissions.
+
+Create separate navigation, dashboard layouts and routes for each role.
+
+==================================================
+4. LANDING PAGE
+==================================================
+
+Create a premium landing page.
+
+HEADER:
+
+- HackForge logo.
+- Home.
+- How It Works.
+- Features.
+- About.
+- Login.
+- Get Started.
+
+HERO SECTION:
+
+Main heading:
+
+"Stop Building Random Teams.
+Start Building Winning Teams."
+
+Description:
+
+"Discover compatible teammates, create balanced teams and experience a smarter, fairer way to collaborate."
+
+Buttons:
+
+1. Find Your Team.
+2. Create a Team.
+
+Include an attractive illustration representing connected participants, complementary skills and team formation.
+
+SECTION 2 – THE PROBLEM
+
+Explain:
+
+- Unbalanced teams.
+- Skill mismatch.
+- Unfair selection.
+- Last-seat conflicts.
+- Ineffective waiting lists.
+- Leadership dependency.
+
+SECTION 3 – OUR SOLUTION
+
+Introduce HackForge and explain its six innovations.
+
+SECTION 4 – HOW IT WORKS
+
+Show the workflow:
+
+Register → Create Profile → Discover Teams → Compatibility Analysis → Team Health Analysis → Join Team → Confirmation.
+
+SECTION 5 – SIX CORE FEATURES
+
+Create six visually distinctive feature sections.
+
+1. Race-Proof Team Formation.
+2. Compatibility Engine.
+3. Team Health Engine.
+4. Smart Waitlist.
+5. Leadership Succession.
+6. Fairness Dashboard.
+
+SECTION 6 – TECHNICAL INNOVATION
+
+Explain PostgreSQL transactions and row-level locking.
+
+SECTION 7 – CALL TO ACTION
+
+"Find Your People. Build Your Team."
+
+SECTION 8 – FOOTER
+
+Include:
+
+- About HackForge.
+- Features.
+- Contact.
+- Privacy.
+- Terms.
+- Developer information.
+
+==================================================
+5. AUTHENTICATION SYSTEM
+==================================================
+
+Create a complete authentication system.
+
+PAGES:
+
+- Login.
+- Registration.
+- Forgot Password.
+- Reset Password.
+- Profile Completion.
+
+REGISTRATION FIELDS:
+
+- Full name.
+- Email.
+- Password.
+- Confirm password.
+- Institution.
+- Location.
+
+After registration, users must complete their participant profile.
+
+ROLE MANAGEMENT:
+
+Roles:
+
+1. PARTICIPANT
+2. TEAM_LEADER
+3. ADMIN
+
+IMPORTANT SECURITY RULE:
+
+Do not allow public registration to create administrator accounts.
+
+New public registrations should receive the PARTICIPANT role.
+
+Team leadership permissions should be assigned when a user creates a team or is promoted through an authorized process.
+
+Admin accounts must be provisioned through a secure seed or administrative bootstrap process.
+
+AUTHENTICATION REQUIREMENTS:
+
+- Secure password hashing using Argon2 or bcrypt.
+- JWT authentication.
+- Protected frontend routes.
+- Backend authorization guards.
+- Token expiration.
+- Secure refresh-token handling.
+- Logout.
+- Input validation.
+- Rate limiting.
+- Error handling.
+
+Do not store plaintext passwords.
+
+==================================================
+6. PARTICIPANT PROFILE SYSTEM
+==================================================
+
+Create a complete participant profile.
+
+PROFILE SECTIONS:
+
+A. Personal Information
+
+- Full name.
+- Profile image.
+- Email.
+- College.
+- Location.
+- Short biography.
+
+B. Technical Skills
+
+Allow participants to add multiple skills.
+
+FRONTEND:
+- HTML.
+- CSS.
+- JavaScript.
+- React.
+- Angular.
+- Vue.
+
+BACKEND:
+- Node.js.
+- Express.
+- NestJS.
+- Python.
+- Java.
+- Spring Boot.
+
+DATABASE:
+- PostgreSQL.
+- MySQL.
+- MongoDB.
+- Redis.
+
+AI/ML:
+- Python.
+- TensorFlow.
+- Scikit-learn.
+- Machine Learning.
+- Data Analysis.
+
+DESIGN:
+- Figma.
+- UI/UX.
+- Prototyping.
+
+CLOUD:
+- AWS.
+- Azure.
+- Docker.
+- Kubernetes.
+
+Allow custom skills through a controlled skill-management process.
+
+C. EXPERIENCE LEVEL
+
+- Beginner.
+- Intermediate.
+- Advanced.
+- Expert.
+
+D. PREFERRED ROLE
+
+- Frontend Developer.
+- Backend Developer.
+- Full-Stack Developer.
+- AI/ML Developer.
+- UI/UX Designer.
+- Data Analyst.
+- Researcher.
+- Project Manager.
+- Presenter.
+
+E. PROJECT INTERESTS
+
+- Healthcare.
+- Artificial Intelligence.
+- Education.
+- FinTech.
+- Cybersecurity.
+- Sustainability.
+- Smart Cities.
+- Agriculture.
+
+F. COLLABORATION PREFERENCES
+
+- Remote.
+- On-site.
+- Hybrid.
+- Flexible.
+
+Allow participants to update their profiles.
+
+All profile information must be stored in PostgreSQL.
+
+==================================================
+7. PARTICIPANT DASHBOARD
+==================================================
+
+Create a premium participant dashboard.
+
+SIDEBAR:
+
+1. Overview.
+2. My Profile.
+3. Discover Teams.
+4. Recommended Teams.
+5. Find Teammates.
+6. My Team.
+7. Invitations.
+8. Smart Waitlist.
+9. Notifications.
+10. Settings.
+11. Logout.
+
+DASHBOARD OVERVIEW:
+
+Display:
+
+- Profile completion.
+- Current team status.
+- Recommended teams.
+- Pending invitations.
+- Compatibility overview.
+- Waitlist status.
+- Recent activity.
+
+DISCOVER TEAMS:
+
+Allow participants to:
+
+- Search teams.
+- Filter by project category.
+- Filter by required skills.
+- Filter by available seats.
+- Filter by experience requirements.
+- View team details.
+- View team health.
+- View compatibility.
+- Request membership.
+
+TEAM DETAILS PAGE:
+
+Display:
+
+- Team name.
+- Description.
+- Team leader.
+- Current members.
+- Maximum capacity.
+- Required skills.
+- Project category.
+- Team health score.
+- Available positions.
+- Join Team button.
+- Join Waitlist button when full.
+
+FIND TEAMMATES:
+
+Show recommended participants.
+
+Display:
+
+- Profile image.
+- Name.
+- Skills.
+- Experience.
+- Preferred role.
+- Compatibility score.
+- Explanation for recommendation.
+
+==================================================
+8. TEAM LEADER DASHBOARD
+==================================================
+
+Create a separate team leader dashboard.
+
+SIDEBAR:
+
+1. Overview.
+2. My Team.
+3. Create Team.
+4. Team Members.
+5. Team Requirements.
+6. Team Health.
+7. Find Members.
+8. Invitations.
+9. Smart Waitlist.
+10. Leadership.
+11. Activity History.
+12. Settings.
+13. Logout.
+
+TEAM CREATION FORM:
+
+Fields:
+
+- Team name.
+- Description.
+- Project category.
+- Maximum team capacity.
+- Required technical skills.
+- Required roles.
+- Experience requirements.
+- Collaboration mode.
+- Team visibility.
+
+Allow leaders to create teams.
+
+After creation:
+
+- The creator becomes the primary leader.
+- The creator is automatically added as a team member.
+- The system validates team capacity.
+- The team appears in discovery results.
+
+TEAM MANAGEMENT:
+
+Leaders can:
+
+- View team members.
+- Review membership requests.
+- Send invitations.
+- Remove members with appropriate authorization.
+- Edit team details.
+- Update team requirements.
+- Assign a secondary leader.
+- View team health.
+- View compatibility recommendations.
+- Manage waitlists.
+
+Do not allow leaders to exceed team capacity.
+
+==================================================
+9. FEATURE ONE – RACE-PROOF TEAM FORMATION ENGINE
+==================================================
+
+THIS IS THE MOST IMPORTANT TECHNICAL FEATURE.
+
+Build this feature using PostgreSQL transactions.
+
+PROBLEM:
+
+Suppose:
+
+Maximum capacity = 5.
+Existing members = 4.
+Available seats = 1.
+
+Now, 50 participants simultaneously attempt to join.
+
+Without concurrency control, multiple requests could incorrectly occupy the same final position.
+
+SOLUTION:
+
+Implement transaction-based membership allocation.
+
+Use PostgreSQL SELECT FOR UPDATE row-level locking.
+
+REQUIRED WORKFLOW:
+
+1. Participant requests to join a team.
+2. Backend starts a database transaction.
+3. Lock the relevant team row.
+4. Read the current membership count.
+5. Check team capacity.
+6. Check whether the participant is already a member.
+7. Check eligibility and membership restrictions.
+8. If capacity exists, insert the membership.
+9. Commit the transaction.
+10. Otherwise, reject the request or offer waitlist access.
+
+IMPLEMENTATION REQUIREMENTS:
+
+Use Prisma interactive transactions with an appropriate raw SQL SELECT FOR UPDATE operation.
+
+Ensure all membership writes follow the same transaction and locking strategy.
+
+Use:
+
+- PostgreSQL row-level locking.
+- Database constraints.
+- Atomic membership operations.
+- Duplicate membership protection.
+- Transaction rollback.
+- Proper error responses.
+- Idempotency protection where appropriate.
+
+Create a unique database constraint for participant/team membership.
+
+The capacity check must use actual database membership records.
+
+Do not rely on a frontend member count.
+
+Do not use Redis as a replacement for PostgreSQL transactional locking.
+
+RACE-PROOF DEMONSTRATION PAGE:
+
+Create a dedicated page called:
+
+"Concurrency Lab"
+
+Display:
+
+- Team name.
+- Maximum capacity.
+- Current membership count.
+- Available seats.
+- Number of simulated participants.
+- Successful requests.
+- Rejected requests.
+- Final membership count.
+- Overbooking status.
+
+Add a button:
+
+"RUN 50-USER TEST"
+
+This button must execute actual concurrent backend requests against a controlled test team.
+
+Expected scenario:
+
+- Existing members: 4.
+- Maximum capacity: 5.
+- Concurrent requests: 50.
+- Successful joins: 1.
+- Rejected joins: 49.
+- Final members: 5.
+- Overbooking: 0.
+
+Display actual results returned by the backend.
+
+Never hardcode the expected results as the test output.
+
+Run the concurrency demonstration in a controlled test environment.
+
+==================================================
+10. FEATURE TWO – COMPATIBILITY ENGINE
+==================================================
+
+Build a deterministic, explainable compatibility scoring engine.
+
+OBJECTIVE:
+
+Recommend suitable participants for teams based on skills, roles, experience, interests and collaboration preferences.
+
+SCORING MODEL:
+
+Skill Match = 35%
+
+Role Complementarity = 25%
+
+Experience Compatibility = 15%
+
+Project Interest Match = 15%
+
+Collaboration Preferences = 10%
+
+TOTAL = 100%.
+
+FORMULA:
+
+Compatibility Score =
+
+(Skill Match × 0.35) +
+
+(Role Complementarity × 0.25) +
+
+(Experience Compatibility × 0.15) +
+
+(Project Interest Match × 0.15) +
+
+(Collaboration Preferences × 0.10)
+
+Each component must be normalized to a score between 0 and 100.
+
+IMPLEMENTATION:
+
+A. SKILL MATCH
+
+Compare participant skills against team-required skills.
+
+B. ROLE COMPLEMENTARITY
+
+Identify whether the participant can fill a missing team role.
+
+C. EXPERIENCE COMPATIBILITY
+
+Compare the participant's experience with team requirements.
+
+D. PROJECT INTEREST MATCH
+
+Compare project interests.
+
+E. COLLABORATION MATCH
+
+Compare remote, on-site or hybrid preferences.
+
+OUTPUT:
+
+Generate:
+
+- Compatibility percentage.
+- Component-wise breakdown.
+- Recommendation explanation.
+- Matching skills.
+- Missing skills.
+- Complementary roles.
+
+EXAMPLE:
+
+Candidate A: 94%.
+
+Candidate B: 88%.
+
+Candidate C: 81%.
+
+These should be calculated from actual profile data.
+
+Create a recommendation dashboard.
+
+Allow filtering and sorting by compatibility.
+
+IMPORTANT:
+
+Compatibility scores must not automatically reject participants.
+
+Recommendations should support human decision-making.
+
+Cache scores where useful, but invalidate or recalculate them when relevant profiles or team requirements change.
+
+==================================================
+11. FEATURE THREE – TEAM HEALTH ENGINE
+==================================================
+
+OBJECTIVE:
+
+Evaluate the overall balance and completeness of a team.
+
+SCORING MODEL:
+
+Skill Coverage = 35%.
+
+Role Coverage = 30%.
+
+Experience Balance = 15%.
+
+Leadership Readiness = 10%.
+
+Requirement Fulfillment = 10%.
+
+TOTAL = 100%.
+
+EXAMPLE:
+
+Team Alpha:
+
+Frontend: 2 members.
+
+Backend: 2 members.
+
+AI/ML: 0 members.
+
+UI/UX: 0 members.
+
+Presenter: 0 members.
+
+EXPECTED ANALYSIS:
+
+- Missing AI/ML role.
+- Missing UI/UX role.
+- Missing presentation responsibility.
+
+Example Team Health Score:
+
+58/100.
+
+Status:
+
+Needs Improvement.
+
+RECOMMENDATIONS:
+
+1. Recruit an AI/ML developer.
+2. Recruit a UI/UX designer.
+3. Assign a presentation lead.
+
+IMPLEMENTATION REQUIREMENTS:
+
+- Calculate skill coverage.
+- Calculate role coverage.
+- Analyze experience distribution.
+- Check leadership readiness.
+- Compare actual membership against team requirements.
+- Generate improvement recommendations.
+
+Do not hardcode team health scores.
+
+Scores must be derived from actual database information.
+
+Create:
+
+- Team Health Overview.
+- Health Score Card.
+- Skill Distribution Chart.
+- Role Coverage Chart.
+- Missing Skills Section.
+- Recommendations Section.
+
+Recalculate health after membership or requirement changes.
+
+Make scoring rules configurable.
+
+==================================================
+12. FEATURE FOUR – SMART WAITLIST
+==================================================
+
+OBJECTIVE:
+
+Give participants an alternative when a team is full.
+
+WORKFLOW:
+
+1. Participant requests to join a full team.
+2. System checks eligibility.
+3. Participant joins the waitlist.
+4. Queue position is assigned.
+5. Participant receives confirmation.
+6. When a member leaves, the system detects a vacancy.
+7. The next eligible waitlisted participant is identified.
+8. An invitation is sent.
+9. Participant accepts or declines.
+10. Membership is confirmed or the next eligible participant is invited.
+
+WAITLIST DATA:
+
+- Waitlist ID.
+- Participant ID.
+- Team ID.
+- Request timestamp.
+- Queue position.
+- Compatibility score.
+- Status.
+- Invitation expiration.
+- Acceptance timestamp.
+
+STATUSES:
+
+- WAITING.
+- INVITED.
+- ACCEPTED.
+- DECLINED.
+- EXPIRED.
+- CANCELLED.
+- COMPLETED.
+
+FAIRNESS POLICY:
+
+Use transparent eligibility and queue-priority rules.
+
+Recommended default:
+
+1. Check eligibility.
+2. Respect queue order.
+3. Use compatibility as supporting information.
+4. Do not secretly bypass earlier eligible participants.
+5. Record every decision.
+
+Implement safe handling of:
+
+- Duplicate waitlist requests.
+- Expired invitations.
+- Declined invitations.
+- Participant cancellation.
+- Multiple simultaneous vacancies.
+- Concurrent invitation acceptance.
+
+The membership confirmation must use the same race-proof capacity mechanism.
+
+Create a complete waitlist dashboard.
+
+==================================================
+13. FEATURE FIVE – LEADERSHIP SUCCESSION
+==================================================
+
+OBJECTIVE:
+
+Prevent teams from losing management continuity when their primary leader leaves.
+
+TEAM STRUCTURE:
+
+- Primary Leader.
+- Secondary Leader.
+- Team Members.
+
+WORKFLOW:
+
+1. Primary leader leaves or transfers authority.
+2. System detects the event.
+3. Checks secondary leader eligibility.
+4. Transfers leadership when permitted.
+5. Updates team permissions.
+6. Records leadership history.
+7. Sends notifications.
+
+FEATURES:
+
+- Assign secondary leader.
+- View leadership history.
+- Transfer leadership.
+- Automatic succession under defined conditions.
+- Admin intervention.
+- Leadership notifications.
+
+IMPORTANT:
+
+Leadership transfer must be transactional.
+
+Do not allow a team to accidentally have multiple primary leaders.
+
+Maintain a valid leadership state even when the primary leader leaves.
+
+==================================================
+14. FEATURE SIX – FAIRNESS DASHBOARD
+==================================================
+
+Create a dedicated administrator analytics dashboard.
+
+DASHBOARD METRICS:
+
+- Total participants.
+- Total teams.
+- Active teams.
+- Unassigned participants.
+- Average team health.
+- Average compatibility.
+- Team capacity utilization.
+- Waitlist distribution.
+- Invitation acceptance rate.
+
+FAIRNESS ANALYTICS:
+
+1. Membership allocation history.
+2. Waitlist distribution.
+3. Recommendation distribution.
+4. Repeated rejection patterns.
+5. Unassigned participant distribution.
+6. Team skill distribution.
+7. Invitation acceptance rates.
+
+ADMINISTRATOR ACTIONS:
+
+- Search participants.
+- Filter teams.
+- View team details.
+- Review waitlists.
+- View audit logs.
+- Investigate allocation decisions.
+- Manage event settings.
+- Suspend inappropriate accounts with proper audit records.
+
+IMPORTANT:
+
+Do not claim that a compatibility score guarantees fairness.
+
+The dashboard should provide visibility into patterns and support administrative review.
+
+Every important administrative action must be recorded in the audit log.
+
+==================================================
+15. NOTIFICATION SYSTEM
+==================================================
+
+Create a functional notification system.
+
+NOTIFICATION EVENTS:
+
+- Team invitation received.
+- Membership request accepted.
+- Membership request rejected.
+- Waitlist position updated.
+- Waitlist invitation received.
+- Team vacancy available.
+- New team member joined.
+- Member left.
+- Leadership transferred.
+- Team requirements updated.
+
+Implement:
+
+- Notification dropdown.
+- Notifications page.
+- Unread count.
+- Mark as read.
+- Mark all as read.
+- Notification history.
+
+Use Socket.IO for real-time notifications.
+
+Notifications must also be persisted in PostgreSQL.
+
+==================================================
+16. ADMIN PORTAL
+==================================================
+
+Create a premium administrative dashboard.
+
+SIDEBAR:
+
+1. Overview.
+2. Participants.
+3. Teams.
+4. Compatibility Analytics.
+5. Team Health Analytics.
+6. Fairness Dashboard.
+7. Waitlist Management.
+8. Concurrency Lab.
+9. Audit Logs.
+10. Event Settings.
+11. System Settings.
+12. Logout.
+
+OVERVIEW:
+
+Display:
+
+- Total registered participants.
+- Total teams.
+- Active teams.
+- Unassigned participants.
+- Full teams.
+- Average team health.
+- Average compatibility.
+- Capacity utilization.
+
+PARTICIPANT MANAGEMENT:
+
+- Search.
+- Filter.
+- View profiles.
+- Manage account status.
+- View participation history.
+
+TEAM MANAGEMENT:
+
+- Search teams.
+- View team members.
+- View capacity.
+- View requirements.
+- View health.
+- Manage inappropriate teams.
+
+AUDIT LOGS:
+
+Store:
+
+- Actor ID.
+- Action.
+- Entity type.
+- Entity ID.
+- Timestamp.
+- Relevant metadata.
+
+Do not expose sensitive passwords or authentication tokens in logs.
+
+==================================================
+17. DATABASE ARCHITECTURE
+==================================================
+
+Use PostgreSQL with Prisma ORM.
+
+Create a normalized database schema.
+
+REQUIRED TABLES:
+
+1. users
+2. profiles
+3. skills
+4. user_skills
+5. teams
+6. team_members
+7. team_requirements
+8. invitations
+9. waitlist_entries
+10. compatibility_scores
+11. team_health
+12. leadership_history
+13. notifications
+14. audit_logs
+15. event_settings
+
+IMPORTANT RELATIONSHIPS:
+
+- One user has one profile.
+- One user has multiple skills.
+- One team has multiple members.
+- One team has multiple requirements.
+- One team has multiple invitations.
+- One team has multiple waitlist entries.
+- One team has leadership history.
+- One user has multiple notifications.
+
+DATABASE RULES:
+
+- Unique email addresses.
+- Unique team membership.
+- Foreign key constraints.
+- Valid capacity constraints.
+- Indexed search fields.
+- Transaction-based membership allocation.
+- Proper deletion and archival policies.
+
+Use UUID primary keys.
+
+Use timestamps for created_at and updated_at.
+
+Use database migrations.
+
+Generate Prisma schema and migration files.
+
+Do not store all application information in browser localStorage.
+
+PostgreSQL must be the authoritative source of application data.
+
+==================================================
+18. BACKEND ARCHITECTURE
+==================================================
+
+Use NestJS.
+
+Create these modules:
+
+- AuthModule.
+- UsersModule.
+- ProfilesModule.
+- SkillsModule.
+- TeamsModule.
+- MembershipModule.
+- CompatibilityModule.
+- TeamHealthModule.
+- WaitlistModule.
+- InvitationsModule.
+- LeadershipModule.
+- NotificationsModule.
+- AnalyticsModule.
+- AuditLogsModule.
+- AdminModule.
+
+Use:
+
+- Controllers.
+- Services.
+- DTOs.
+- Guards.
+- Interceptors where appropriate.
+- Validation pipes.
+- Exception filters.
+- Prisma service.
+
+Separate business logic from controllers.
+
+Use REST APIs.
+
+All APIs must have proper:
+
+- Authentication.
+- Authorization.
+- Validation.
+- Error handling.
+- Response structures.
+- Logging.
+
+==================================================
+19. API ENDPOINTS
+==================================================
+
+AUTHENTICATION:
+
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+GET /api/auth/me
+POST /api/auth/refresh
+POST /api/auth/forgot-password
+POST /api/auth/reset-password
+
+PROFILE:
+
+GET /api/users/profile
+PUT /api/users/profile
+GET /api/users
+GET /api/users/:id
+
+TEAMS:
+
+POST /api/teams
+GET /api/teams
+GET /api/teams/:id
+PUT /api/teams/:id
+DELETE /api/teams/:id
+
+POST /api/teams/:id/join
+POST /api/teams/:id/leave
+
+MEMBERSHIP:
+
+GET /api/teams/:id/members
+POST /api/teams/:id/members
+DELETE /api/teams/:id/members/:userId
+
+COMPATIBILITY:
+
+GET /api/compatibility/users/:id
+GET /api/compatibility/teams/:id
+POST /api/compatibility/calculate
+
+TEAM HEALTH:
+
+GET /api/teams/:id/health
+POST /api/teams/:id/health/recalculate
+
+WAITLIST:
+
+POST /api/teams/:id/waitlist
+GET /api/teams/:id/waitlist
+GET /api/waitlist/me
+POST /api/waitlist/:id/accept
+POST /api/waitlist/:id/decline
+DELETE /api/waitlist/:id
+
+INVITATIONS:
+
+POST /api/teams/:id/invitations
+GET /api/invitations
+POST /api/invitations/:id/accept
+POST /api/invitations/:id/decline
+
+LEADERSHIP:
+
+POST /api/teams/:id/leadership/transfer
+GET /api/teams/:id/leadership/history
+
+ADMIN:
+
+GET /api/admin/dashboard
+GET /api/admin/analytics
+GET /api/admin/fairness
+GET /api/admin/audit-logs
+GET /api/admin/participants
+GET /api/admin/teams
+
+CONCURRENCY TESTING:
+
+POST /api/admin/concurrency-test
+
+Protect administrator-only endpoints.
+
+Validate all request parameters and payloads.
+
+==================================================
+20. REAL-TIME FUNCTIONALITY
+==================================================
+
+Use Socket.IO.
+
+Implement real-time events for:
+
+- Team membership changes.
+- New invitations.
+- Invitation acceptance.
+- Waitlist updates.
+- Team health updates.
+- Notifications.
+- Leadership changes.
+
+Use authenticated socket connections.
+
+Users should only receive events they are authorized to access.
+
+Persist important events in PostgreSQL.
+
+==================================================
+21. DEMO DATA AND LOGIN CREDENTIALS
+==================================================
+
+Create a database seed script.
+
+Generate the following demo accounts.
+
+ADMIN:
+
+admin@hackforge.demo
+
+TEAM LEADER:
+
+leader@hackforge.demo
+
+PARTICIPANTS:
+
+participant1@hackforge.demo
+participant2@hackforge.demo
+participant3@hackforge.demo
+
+Use a documented development-only demo password.
+
+For example:
+
+HackForge@2026
+
+Store only password hashes in the database.
+
+Never hardcode authentication bypasses.
+
+DEMO DATA:
+
+Create:
+
+- 30 participants.
+- 8 teams.
+- 10 or more technical skills.
+- Multiple experience levels.
+- Different project interests.
+- Full teams.
+- Incomplete teams.
+- Teams with missing roles.
+- Unassigned participants.
+- Waitlisted participants.
+- Pending invitations.
+- Leadership history.
+
+The demo environment must allow judges to explore all three portals.
+
+Make it clear which data is sample data.
+
+Do not use fake results for the concurrency test.
+
+==================================================
+22. TESTING REQUIREMENTS
+==================================================
+
+Create automated tests.
+
+TARGET:
+
+30+ functional and integration tests.
+
+TEST:
+
+AUTHENTICATION:
+- Valid registration.
+- Duplicate email rejection.
+- Valid login.
+- Invalid password rejection.
+- Protected routes.
+
+PROFILE:
+- Create profile.
+- Update profile.
+- Add skills.
+- Remove skills.
+
+TEAM:
+- Create team.
+- Update team.
+- Join team.
+- Leave team.
+- Prevent duplicate membership.
+- Prevent overbooking.
+
+COMPATIBILITY:
+- Correct score calculation.
+- Skill matching.
+- Role complementarity.
+- Recommendation ranking.
+
+TEAM HEALTH:
+- Skill coverage.
+- Role coverage.
+- Health calculation.
+- Missing role detection.
+
+WAITLIST:
+- Join waitlist.
+- Duplicate request prevention.
+- Queue ordering.
+- Invitation acceptance.
+- Invitation expiration.
+
+LEADERSHIP:
+- Assign secondary leader.
+- Transfer leadership.
+- Record leadership history.
+
+ADMIN:
+- Protected access.
+- Dashboard analytics.
+- Audit log generation.
+
+CONCURRENCY:
+
+Create a 50-user simultaneous join test.
+
+Expected:
+
+- One available seat.
+- Fifty concurrent requests.
+- One successful membership.
+- Forty-nine unsuccessful requests.
+- No overbooking.
+
+Run against an isolated test database or controlled test team.
+
+==================================================
+23. LOAD TESTING
+==================================================
+
+Use k6.
+
+PROPOSED PERFORMANCE TARGETS:
+
+- 10,000 users.
+- 2,000 teams.
+- p95 response time below 200 ms.
+
+Create load-testing scripts.
+
+Test:
+
+- Login requests.
+- Team discovery.
+- Profile access.
+- Compatibility calculations.
+- Team joining.
+- Dashboard APIs.
+
+Generate an actual test report.
+
+Do not claim the targets have been achieved unless measurements support them.
+
+==================================================
+24. FOLDER STRUCTURE
+==================================================
+
+Create a clean monorepo.
+
+hackforge/
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── hooks/
+│   │   ├── services/
+│   │   ├── context/
+│   │   ├── types/
+│   │   ├── utils/
+│   │   └── assets/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   │   ├── auth/
+│   │   ├── users/
+│   │   ├── profiles/
+│   │   ├── skills/
+│   │   ├── teams/
+│   │   ├── membership/
+│   │   ├── compatibility/
+│   │   ├── team-health/
+│   │   ├── waitlist/
+│   │   ├── invitations/
+│   │   ├── leadership/
+│   │   ├── notifications/
+│   │   ├── analytics/
+│   │   ├── audit-logs/
+│   │   └── admin/
+│   ├── prisma/
+│   │   ├── schema.prisma
+│   │   ├── migrations/
+│   │   └── seed.ts
+│   └── package.json
+│
+├── docs/
+│   ├── architecture.md
+│   ├── database.md
+│   ├── api.md
+│   ├── testing.md
+│   └── deployment.md
+│
+├── load-tests/
+│   └── k6-script.js
+│
+├── .gitignore
+├── .env.example
+├── README.md
+└── docker-compose.yml
+
+Adapt the folder structure if required, but preserve separation between frontend and backend.
+
+==================================================
+25. DEPLOYMENT CONFIGURATION
+==================================================
+
+Prepare the project for:
+
+FRONTEND:
+Vercel.
+
+BACKEND:
+Render.
+
+DATABASE:
+Neon PostgreSQL.
+
+REDIS:
+Upstash.
+
+ENVIRONMENT VARIABLES:
+
+DATABASE_URL
+JWT_SECRET
+JWT_REFRESH_SECRET
+REDIS_URL
+FRONTEND_URL
+BACKEND_URL
+CORS_ORIGIN
+
+Create .env.example.
+
+Never expose secrets in frontend code.
+
+Never commit real environment variables.
+
+Provide deployment instructions for all services.
+
+Configure production CORS and secure cookie settings appropriately.
+
+If an external service cannot be provisioned automatically, generate the required integration code and clearly document the manual configuration steps.
+
+==================================================
+26. README DOCUMENTATION
+==================================================
+
+Create a professional README.md.
+
+Include:
+
+1. Project overview.
+2. Problem statement.
+3. Proposed solution.
+4. Six major features.
+5. Technology stack.
+6. System architecture.
+7. Folder structure.
+8. Installation instructions.
+9. Environment configuration.
+10. Database migration instructions.
+11. Seed instructions.
+12. Demo login credentials.
+13. API documentation.
+14. Testing instructions.
+15. Concurrency test instructions.
+16. Load-testing instructions.
+17. Deployment instructions.
+18. Known limitations.
+
+==================================================
+27. DEVELOPMENT EXECUTION STRATEGY
+==================================================
+
+DO NOT attempt to generate a superficial application with all features appearing complete but not working.
+
+Develop systematically.
+
+PHASE 1 – PROJECT FOUNDATION
+
+- Create project structure.
+- Configure React.
+- Configure NestJS.
+- Configure TypeScript.
+- Configure Tailwind.
+- Configure Prisma.
+- Configure PostgreSQL.
+- Create initial database schema.
+
+PHASE 2 – FRONTEND FOUNDATION
+
+- Landing page.
+- Authentication pages.
+- Participant layout.
+- Leader layout.
+- Admin layout.
+- Responsive navigation.
+
+PHASE 3 – AUTHENTICATION AND PROFILES
+
+- Registration.
+- Login.
+- Role-based access.
+- Participant profile.
+- Skills management.
+
+PHASE 4 – TEAM MANAGEMENT
+
+- Team creation.
+- Team discovery.
+- Team requirements.
+- Membership management.
+- Invitations.
+
+PHASE 5 – RACE-PROOF ENGINE
+
+- PostgreSQL transaction.
+- Row-level locking.
+- Capacity validation.
+- Concurrency testing.
+- Concurrency Lab.
+
+PHASE 6 – INTELLIGENCE
+
+- Compatibility Engine.
+- Team Health Engine.
+- Recommendation explanations.
+
+PHASE 7 – CONTINUITY
+
+- Smart Waitlist.
+- Invitation expiration.
+- Leadership Succession.
+- Notifications.
+
+PHASE 8 – ADMINISTRATION
+
+- Admin dashboard.
+- Fairness analytics.
+- Audit logs.
+- Platform management.
+
+PHASE 9 – VALIDATION
+
+- Functional tests.
+- Integration tests.
+- Security checks.
+- Concurrency tests.
+- Load tests.
+
+PHASE 10 – DELIVERY
+
+- README.
+- Environment configuration.
+- Deployment instructions.
+- Production build.
+- Bug fixing.
+
+==================================================
+28. STRICT DEVELOPMENT RULES
+==================================================
+
+1. Build an actual working full-stack application.
+2. Do not generate only a landing page.
+3. Do not leave major features as placeholders.
+4. Do not use hardcoded compatibility scores.
+5. Do not use hardcoded team health scores.
+6. Do not simulate database operations.
+7. Do not bypass authentication.
+8. Do not expose administrator access publicly.
+9. Do not allow team overbooking.
+10. Do not allow duplicate memberships.
+11. Do not store plaintext passwords.
+12. Do not expose secrets.
+13. Do not make fake concurrency test results.
+14. Do not claim unverified load-testing performance.
+15. Ensure every major action has a working backend API.
+16. Ensure data persists after refreshing the page.
+17. Ensure all three portals are functional.
+18. Ensure responsive layouts.
+19. Ensure clear error messages.
+20. Ensure loading and empty states.
+21. Ensure proper authorization on every sensitive API.
+22. Keep the code modular and maintainable.
+
+If any integration is unavailable, clearly explain what is missing and provide the implementation required to connect it.
+
+Do not silently replace PostgreSQL with localStorage or a mock database.
+
+==================================================
+29. FINAL ACCEPTANCE CRITERIA
+==================================================
+
+The application will be considered functionally complete only when the following conditions are met.
+
+FRONTEND:
+- Landing page works.
+- Login and registration work.
+- All three dashboards work.
+- Forms validate.
+- Navigation works.
+- Mobile responsiveness works.
+
+BACKEND:
+- APIs operate correctly.
+- Authentication works.
+- Role permissions work.
+- Database integration works.
+
+CORE INNOVATIONS:
+- Race-Proof Team Formation works.
+- Compatibility Engine calculates actual scores.
+- Team Health Engine calculates actual scores.
+- Smart Waitlist works.
+- Leadership Succession works.
+- Fairness Dashboard uses real database information.
+
+SYSTEM:
+- Notifications work.
+- Audit logs work.
+- Database constraints work.
+- No overbooking occurs.
+- No unauthorized access occurs.
+
+TESTING:
+- Automated tests execute.
+- Concurrency test executes.
+- Load-testing scripts are available.
+
+DELIVERY:
+- README exists.
+- Environment example exists.
+- Database seed works.
+- Deployment instructions exist.
+- Production build succeeds.
+
+==================================================
+30. FINAL INSTRUCTION
+==================================================
+
+Now begin developing HACKFORGE.
+
+First, inspect your available project-generation capabilities and create the complete project structure.
+
+Then implement the application phase by phase.
+
+Prioritize working functionality over decorative design.
+
+Build the frontend and backend as connected systems.
+
+Make the Race-Proof Team Formation Engine the most important technical component.
+
+Make the Compatibility Engine and Team Health Engine the central intelligent components.
+
+Make the Smart Waitlist, Leadership Succession and Fairness Dashboard fully integrated supporting modules.
+
+Do not stop after creating the landing page.
+
+Do not stop after creating dashboard mockups.
+
+Continue implementing backend services, database models, APIs, frontend integration and tests.
+
+At the end of each development phase:
+
+1. List files created.
+2. Explain what works.
+3. Explain what remains.
+4. Run relevant build or tests.
+5. Fix errors before continuing.
+
+If the complete implementation cannot fit into one generation, preserve project state and continue from the existing codebase in subsequent steps.
+
+The final objective is a reliable, professional, fully functional HackForge web application.
+
+PROJECT IDENTITY:
+
+HACKFORGE
+
+BUILD BALANCED TEAMS.
+NOT RANDOM TEAMS.

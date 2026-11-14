@@ -1,0 +1,8 @@
+{
+  "name": "HackForge — Race-Proof Team Formation",
+  "description": "Intelligent team formation platform featuring PostgreSQL row-level locking, explainable compatibility scoring, team health diagnostics, smart waitlists, and leadership succession.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
